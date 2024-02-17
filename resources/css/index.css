@@ -1,0 +1,72 @@
+/* Base styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+ table {
+    margin: 0 auto;
+    width: 25%;
+    border-collapse: collapse;
+ }
+  table, th, td {
+    border: 1px solid black;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+
+/* Styling the header banner */
+.banner {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Some padding */
+    text-align: center;
+}
+
+/* Introduction section styling */
+.introduction h2, .introduction p {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Gallery styling */
+.gallery h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.photo {
+    width: calc(33.333% - 10px); /* Three images per row with a gap */
+    max-width: 600px; /* Adjust based on preference */
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .photo {
+        width: calc(50% - 10px); /* Two images per row on smaller screens */
+    }
+}
